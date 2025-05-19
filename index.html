@@ -1,0 +1,1161 @@
+<!-- <!doctype html> -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="pt-br">
+<!--<![endif]-->
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description"
+    content="Desenvolver um marketplace que promova a comercialização de produtos orgânicos e veganos.">
+  <meta name="author" content="Equipe NatuVeggie">
+  <meta name="keywords" content="NatuVeggie, veganismo, vegetarianismo, produtor">
+  <meta name="reply-to" content="contato@natuveggie.com.br">
+
+  <title>Vendedor - NatuVeggie.com.br</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Resource style -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <style>
+    /* Tipologia */
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Lato', sans-serif;
+      color: #555;
+      margin: 25px 0 35px 0;
+      line-height: 1.2em;
+    }
+
+    h1 {
+      font: 700 100px/100px 'PlayfairDisplay', serif;
+      position: relative;
+      letter-spacing: -0.1rem;
+      margin: 0px auto 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+
+    h4 {
+      font-size: 30px;
+    }
+
+    h5 {
+      font-size: 24px;
+    }
+
+    h6 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* Links */
+    .link-menu {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .link-menu:hover {
+      text-decoration: none;
+      border-bottom: 3px solid #5f8569;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    .link-button {
+      font-size: 15px;
+      line-height: 18px;
+      padding: 15px 30px;
+      letter-spacing: 2px;
+    }
+
+    .link-button-1 {
+      color: #fff;
+      padding: 15px 40px;
+      border: 2px solid #fff;
+    }
+
+    .link-button-2 {
+      color: #000;
+      background-color: #fff;
+    }
+
+    .link-button-3 {
+      color: #000;
+      border: 2px solid #000;
+    }
+
+    .link-button:hover,
+    .link-button-1:hover {
+      background: #46ad61;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Reparação de Divs */
+    /* .reparacao{
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+    display: inline-block;
+} */
+    /* Menu */
+    .navbar {
+      margin-bottom: 0px;
+    }
+
+    .navbar-brand {
+      padding: 0px;
+      margin: 0 auto;
+    }
+
+    .navbar-default {
+      background-color: #fff;
+    }
+
+    .navbar-nav>li>a.link-principal {
+      color: #000;
+      font-size: 14.5px;
+    }
+
+    .menu {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-right: 0px;
+    }
+
+    .rede-social {
+      background-color: #1d7a67;
+      width: 100px;
+      margin: 0 auto;
+      padding: 40px 40px;
+      line-height: 50px;
+      ;
+    }
+
+    .icones {
+      background-color: #323232;
+      width: 115px;
+      margin-left: 90px;
+      margin-bottom: 15px;
+      padding: 30px 30px;
+    }
+
+    /* Carousel */
+    .titulo {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.2em;
+      font-weight: 700;
+    }
+
+    .titulo-carousel {
+      font-size: 3em;
+      margin: 25px 0 35px 0;
+    }
+
+    .img-carousel {
+      width: 100%;
+    }
+
+    .background-carousel {
+      background: linear-gradient(rgba(11, 65, 42), rgba(11, 65, 42, .8));
+      opacity: 0.7;
+      width: 100%;
+      min-height: 700px;
+      position: absolute;
+      z-index: 90;
+    }
+
+    .carousel-indicators {
+      bottom: 100px;
+    }
+
+    .carousel-caption {
+      top: 200px;
+    }
+
+    /* Content */
+    .contents {
+      position: absolute;
+    }
+
+    .content {
+      background-color: #1d7a67;
+      top: 800px;
+      /* z-index: 1; */
+    }
+
+    .content-1 {
+      left: 150px;
+      top: 5px;
+      width: 82%;
+      /* z-index: 2; */
+    }
+
+    .content-2 {
+      left: 10px;
+      /* z-index: 3; */
+      top: 40px;
+    }
+
+    .content-3 {
+      margin: 100px auto;
+    }
+
+    .content-4 {
+      top: 1600px;
+      /* z-index: 1; */
+    }
+
+    .content-5 {
+      background-color: #000;
+      top: 2300px;
+      /* z-index: 1; */
+      padding: 200px 70px 50px 40px;
+    }
+
+    .content,
+    .content-4 {
+      left: 35px;
+      padding: 50px 35px;
+      min-height: 560px;
+    }
+
+    .content-6 {
+      top: 2050px;
+      z-index: 2;
+    }
+
+    .content-7 {
+      background-color: #1d7a67;
+      top: 2100px;
+      padding: 20px 10px;
+      z-index: 2;
+      color: #fff;
+    }
+
+    .titulo-color-branco {
+      color: #fff !important;
+    }
+
+    .titulo-color-cinza {
+      color: #555 !important;
+    }
+
+    .titulo-color-preto {
+      color: #000 !important;
+    }
+
+    .sub-titulo-color-vermelho {
+      color: #1d7a67 !important;
+    }
+
+    .titulo-content,
+    .sub-titulo-content {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.2em;
+    }
+
+    .titulo-content {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .sub-titulo-content {
+      font-size: 14px;
+    }
+
+    .espacamento-titulo {
+      padding-left: 50px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      transition: .5s ease;
+      background: linear-gradient(rgba(11, 65, 42), rgba(11, 65, 42, .8));
+      opacity: 0;
+    }
+
+    .container:hover .overlay {
+      opacity: 0.9;
+    }
+
+    .text {
+      color: #fff;
+      font-size: 30px;
+      position: absolute;
+      width: 60%;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    .card-cinza {
+      background-color: #1111;
+      padding: 15px 30px;
+    }
+
+    .zera-margin-bottom {
+      margin-bottom: 0px;
+    }
+
+    .zera-margin-top {
+      margin-top: 0px;
+    }
+
+
+    /* MEDIA QUERY */
+    @media (max-width: 340.98px) {
+
+      .carousel,
+      .img-carousel {
+        height: 400px !important;
+      }
+
+      .img-logo {
+        margin-left: 70px !important;
+      }
+
+      .carousel-indicators {
+        bottom: 90px;
+      }
+
+      .carousel-caption {
+        top: 50px;
+      }
+
+      .content {
+        left: 8px;
+        top: 460px;
+        padding: 30px 15px !important;
+        min-height: 1300px;
+        z-index: 2;
+      }
+
+      .content-1 {
+        left: 0px;
+        z-index: 1;
+        top: 350px;
+      }
+
+      /* .content-2{
+        z-index: 3;
+    } */
+      /* .content-3{
+        margin: 50px auto;
+        z-index: 1;
+    } */
+      .content-4 {
+        left: 10px;
+        padding: 0px;
+        top: 1950px;
+      }
+
+      #button-cortesias {
+        display: none;
+      }
+
+      .espacamento-titulo {
+        padding-left: 10px;
+        text-align: center;
+      }
+
+      .titulo-content {
+        font-size: 22px;
+      }
+
+      #todas-suites-1 {
+        display: none;
+      }
+
+      #todas-suites-2 {
+        margin-left: 1% !important;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .titulos-suites {
+        font-size: 0.6em;
+      }
+
+      .link-button {
+        padding: 15px;
+      }
+
+      .img-suites {
+        margin: 5px 0px;
+      }
+
+      #img-suite {
+        top: 370px;
+      }
+
+      .overlay,
+      .img-suites {
+        height: 150px;
+      }
+
+      .row {
+        margin-right: 15px;
+        margin-left: 0px !important;
+      }
+
+      .icones {
+        display: none;
+      }
+
+
+      #mapa {
+        display: none;
+      }
+
+      #footer {
+        display: none;
+      }
+
+      #copyright {
+        display: none;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+
+      .carousel,
+      .img-carousel {
+        height: 400px !important;
+      }
+
+      .img-logo {
+        margin-left: 80px !important;
+      }
+
+      .carousel-indicators {
+        bottom: 10px;
+      }
+
+      .carousel-caption {
+        top: 50px;
+      }
+
+      .content {
+        left: 8px;
+        top: 460px;
+        padding: 30px 15px;
+        min-height: 1300px;
+        z-index: 2;
+      }
+
+      .content-3 {
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      .espacamento-titulo {
+        padding-left: 10px;
+        text-align: center;
+      }
+
+      .titulo-content {
+        font-size: 22px;
+      }
+
+      #todas-suites-1 {
+        display: none;
+      }
+
+      #todas-suites-2 {
+        margin-left: 10%;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .titulos-suites {
+        font-size: 0.6em;
+      }
+
+      .link-button {
+        padding: 15px;
+      }
+
+      .img-suites {
+        margin: 5px 0px;
+      }
+
+      .overlay,
+      .img-suites {
+        height: 200px;
+      }
+
+      .icones {
+        display: none;
+      }
+
+      .content-4 {
+        left: 10px;
+        padding: 0px;
+        top: 1950px;
+      }
+
+      #button-cortesias {
+        display: none;
+      }
+
+      .content-1 {
+        left: 0px;
+        z-index: 1;
+        top: 350px;
+      }
+
+      .row {
+        margin-right: 15px;
+        margin-left: 0px !important;
+      }
+
+      #mapa {
+        display: none;
+      }
+
+      #footer {
+        display: none;
+      }
+
+      #copyright {
+        display: none;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+
+      .carousel,
+      .img-carousel {
+        height: 400px !important;
+      }
+
+      .img-logo {
+        margin-left: 100px !important;
+      }
+
+      .carousel-indicators {
+        bottom: 10px;
+      }
+
+      .carousel-caption {
+        top: 50px;
+      }
+
+      .content {
+        left: 8px;
+        top: 460px;
+        padding: 30px 15px;
+        min-height: 1300px;
+      }
+
+      .content-3 {
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      .espacamento-titulo {
+        padding-left: 10px;
+        text-align: center;
+      }
+
+      .titulo-content {
+        font-size: 22px;
+      }
+
+      #todas-suites-1 {
+        display: none;
+      }
+
+      #todas-suites-2 {
+        margin-left: 10%;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .titulos-suites {
+        font-size: 0.6em;
+      }
+
+      .link-button {
+        padding: 15px;
+      }
+
+      .img-suites {
+        margin: 5px 0px;
+      }
+
+      .overlay,
+      .img-suites {
+        height: 100%;
+      }
+
+      .icones {
+        display: none;
+      }
+
+      .content-4 {
+        left: 10px;
+        padding: 0px;
+        top: 1950px;
+      }
+
+      #button-cortesias {
+        display: none;
+      }
+
+      .content-1 {
+        left: 0px;
+        z-index: 1;
+        top: 350px;
+      }
+
+      .row {
+        margin-right: 15px;
+        margin-left: 0px !important;
+      }
+
+      #mapa {
+        display: none;
+      }
+
+      #footer {
+        display: none;
+      }
+
+      #copyright {
+        display: none;
+      }
+
+      /* .desktop{
+        display: none;
+    }
+    .img-responsive{
+        margin: 0 auto !important;
+    } */
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+      .carousel,
+      .img-carousel {
+        height: 400px !important;
+      }
+
+      .img-logo {
+        margin-left: 270px !important;
+      }
+
+      .carousel-indicators {
+        bottom: 10px;
+      }
+
+      .carousel-caption {
+        top: 50px;
+      }
+
+      #menu {
+        display: none;
+      }
+
+      .content {
+        left: 8px;
+        top: 460px;
+        padding: 30px 15px;
+        min-height: 2500px;
+      }
+
+      .content-3 {
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      .espacamento-titulo {
+        padding-left: 10px;
+        text-align: center;
+      }
+
+      .titulo-content {
+        font-size: 22px;
+      }
+
+      #todas-suites-1 {
+        display: none;
+      }
+
+      #todas-suites-2 {
+        margin-left: 30%;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .titulos-suites {
+        font-size: 1.2em;
+      }
+
+      .link-button {
+        padding: 15px;
+      }
+
+      .img-suites {
+        margin: 10px 0px;
+      }
+
+      .overlay,
+      .img-suites {
+        height: 100%;
+      }
+
+      .icones {
+        display: none;
+      }
+
+      .content-4 {
+        left: 10px;
+        padding: 0px;
+        top: 3500px;
+      }
+
+      .content-1 {
+        left: 0px;
+        z-index: 1;
+        top: 350px;
+      }
+
+      #button-cortesias {
+        display: none;
+      }
+
+      .row {
+        margin-right: 15px;
+        margin-left: 0px !important;
+      }
+
+      #mapa {
+        display: none;
+      }
+
+      #footer {
+        display: none;
+      }
+
+      #copyright {
+        display: none;
+      }
+
+      /* .desktop{
+        display: none;
+    }
+    .img-responsive{
+        margin: 0 auto !important;
+    } */
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .content {
+        left: 8px;
+        top: 460px;
+        padding: 30px 15px;
+        /* min-height: 2700px; */
+        z-index: 1;
+      }
+
+      .content-3 {
+        margin: 50px auto;
+      }
+
+      .content-1 {
+        z-index: 2;
+      }
+
+      .content-2 {
+        z-index: 3;
+      }
+
+      .content-4 {
+        z-index: 1;
+      }
+
+      .content-5 {
+        z-index: 1;
+      }
+
+      .espacamento-titulo {
+        padding-left: 10px;
+      }
+
+      .titulo-content {
+        font-size: 22px;
+      }
+
+      #todas-suites-1 {
+        margin-left: -50%;
+      }
+
+      #todas-suites-2 {
+        margin-left: 0%;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .titulos-suites {
+        font-size: 0.6em;
+      }
+
+      .link-button {
+        padding: 15px;
+      }
+
+      .img-suites {
+        margin: 10px 0px;
+      }
+
+      .img-logo {
+        margin-left: 20px;
+      }
+
+      .carousel-caption {
+        top: 50px;
+      }
+
+      .content {
+        top: 450px;
+      }
+
+      #mapa {
+        display: none;
+      }
+
+      #footer {
+        display: none;
+      }
+
+      #copyright {
+        display: none;
+      }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1992.98px) {
+      .content {
+        left: 45px;
+        top: 700px;
+        padding: 30px 15px;
+        min-height: 880px !important;
+        z-index: 1;
+      }
+
+      .content-3 {
+        margin: 50px auto;
+      }
+
+      .content-1 {
+        z-index: 2;
+      }
+
+      .content-2 {
+        z-index: 3;
+      }
+
+      .content-4 {
+        z-index: 1;
+      }
+
+      .content-5 {
+        z-index: 1;
+      }
+
+      .img-logo {
+        margin-left: 100px;
+      }
+    }
+
+    @media (min-width: 1993px) {
+      .content {
+        left: 45px;
+        top: 700px;
+        padding: 30px 15px;
+        /* min-height: 2700px; */
+        z-index: 1;
+      }
+
+      .content-3 {
+        margin: 50px auto;
+      }
+
+      .content-1 {
+        z-index: 2;
+      }
+
+      .content-2 {
+        z-index: 3;
+      }
+
+      .content-4 {
+        z-index: 1;
+      }
+
+      .content-5 {
+        z-index: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid menu">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <img class="img-logo mx-auto d-block" src="/img/logo.png" alt="Logo da marca NatuVeggie"
+              style="width: 170px;">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse desktop" id="bs-example-navbar-collapse-1">
+          <ul id="menu" class="nav navbar-nav navbar-right">
+            <li><a class="link-menu link-principal text-uppercase" href="#">Início</a></li>
+            <li><a class="link-menu link-principal text-uppercase" href="#">Vantagens</a></li>
+            <li><a class="link-menu link-principal text-uppercase" href="#">O Natuveggie</a></li>
+            <li><a class="link-menu link-principal text-uppercase" href="#">Benefícios</a></li>
+            <li>
+              <span class="rede-social">
+                <a href="#">
+                  <img src="/img/facebook.svg" alt="Ícone do Facebook" style="margin: 0 auto;">
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+  <section>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-caption">
+        <p class="text-center titulo titulo-carousel">Produtor local <br> & NatuVeggie</p>
+        <br>
+        <a class="link-button link-button-1 text-uppercase" href="#">Quero ser um vendedor</a>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+      </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="background-carousel">
+          </div>
+          <img class="img-carousel mx-auto d-block img-responsive" src="/img/foto-topo.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div id="suites" class="contents content container" style="width: 95%">
+      <div class="row">
+        <div class="espacamento-titulo col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p class="titulo-content titulo-color-branco">Descubra as vantagens de <br> ser um vendedor</p>
+          <p class="sub-titulo-content titulo-color-branco">Quando você conhecer, não vai mais querer sair</p>
+        </div>
+        <br>
+        <div class="col-0 col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+          <a id="todas-suites-1" class="link-button link-button-1 text-uppercase" href="#">Ver vantagens</a>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-md-center" style="width: 99%">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <figure>
+            <img class="img-responsive mx-auto d-block img-suites" src="/img/imagem-padrao-loja.png"
+              alt="Suíte Caça Niquel">
+          </figure>
+          <br>
+          <div class="overlay">
+            <div class="text">
+              <p class="titulo titulos-suites">...</p>
+              <p class="sub-titulo-content titulos-suites">...</p>
+              <a class="link-button link-button-1 text-uppercase" href="http://localhost:8001/"
+                target="_black">Conhecer</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class="img-responsive img-suites" src="/img/imagem-padrao-produto.png" alt="Suíte Bingo">
+          <br>
+          <div class="overlay overlay-1">
+            <div class="text">
+              <p class="titulo titulos-suites">...</p>
+              <p class="sub-titulo-content titulos-suites">...</p>
+              <a class="link-button link-button-1 text-uppercase" href="http://localhost:8001/"
+                target="_black">Conhecer</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img class="img-responsive img-suites" src="/img/imagem-padrao-loja.png" alt="Suíte Roleta">
+          <br>
+          <div class="overlay">
+            <div class="text">
+              <p class="titulo titulos-suites">...</p>
+              <p class="sub-titulo-content titulos-suites">...</p>
+              <a class="link-button link-button-1 text-uppercase" href="http://localhost:8001/"
+                target="_black">Conhecer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="sobre-motel" class="row">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+          <div class="contents content-3 row">
+            <div class="col-md-2"></div>
+            <div class="col-md-7">
+              <p class="titulo-content titulo-color-branco">Sobre o Natuveggie</p>
+              <p class="sub-titulo-content titulo-color-branco">NatuVeggie, um marketplace que visa conectar diretamente
+                produtores locais com veganos, vegetarianos ou pessoas em busca de uma alimentação mais saudável.
+              </p>
+              <br>
+              <div>
+                <a class="link-button link-button-1 text-uppercase" href="http://localhost:8001/sobre"
+                  target="_black">Saíba mais</a>
+              </div>
+              <div style="margin-top: 40px">
+                <a class="link-button link-button-2 text-uppercase" href="http://localhost:8001/"
+                  target="_black">Conhecer</a>
+                <br>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+        <div id="icones-suites" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="contents content-2">
+            <div class="icones">
+              <i class="fas fa-credit-card" style="color: white; font-size: 2.5em; text-align: center;"></i>
+            </div>
+            <div class="icones">
+              <i class="fas fa-apple-alt" style="color: white; font-size: 2.5em; text-align: center;"></i>
+            </div>
+            <div class="icones">
+              <i class="fas fa-store" style="color: white; font-size: 2.5em; text-align: center;"></i>
+            </div>
+          </div>
+          <img class="img-responsive contents content-1" src="/img/graos-imagem.jpg" alt="Ícone da fachada">
+        </div>
+      </div>
+    </div>
+    <div id="cortesias" class="contents content-4 container" style="width: 95%">
+      <div class="row">
+        <div class="espacamento-titulo col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p class="titulo-content titulo-color-preto">Mais benefícios para o vendedor</p>
+          <p class="sub-titulo-content titulo-color-preto">Quando você conhecer, não vai mais querer sair</p>
+        </div>
+        <br>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+          <a id="button-cortesias" class="link-button link-button-3 text-uppercase" href="#">Ver vantagens</a>
+        </div>
+      </div>
+      <br>
+      <div class="row text-center" style="width: 99%">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="card card-cinza">
+            <div class="card-body">
+              <h5 class="titulo-content titulo-color-preto zera-margin-bottom">Cadastre-se</h5>
+              <h6 class="card-subtitle mb-2 text-muted zera-margin-top sub-titulo-color-vermelho">1º passo</h6>
+              <p class="card-text">Ao se cadastrar em nossa plataforma, você pode escolher o tipo de conta que deseja
+                ter: produtor local.</p>
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="card card-cinza">
+            <div class="card-body">
+              <h5 class="titulo-content titulo-color-preto zera-margin-bottom">Monte a sua loja</h5>
+              <h6 class="card-subtitle mb-2 text-muted zera-margin-top sub-titulo-color-vermelho">2º passo</h6>
+              <p class="card-text">Em minha loja, você pode fazer do seu jeito o seu negócio.</p>
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="card card-cinza">
+            <div class="card-body">
+              <h5 class="titulo-content titulo-color-preto zera-margin-bottom">Seus produtos</h5>
+              <h6 class="card-subtitle mb-2 text-muted zera-margin-top sub-titulo-color-vermelho">3º passo</h6>
+              <p class="card-text">Em meus produtos, defina quais seus produtos da sua loja.</p>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+
+    </div>
+  </section>
+  <footer>
+
+    <p id="copyright" class="text-center contents content-7" style="width: 100%">NATUVEGGIE | MARKETPLACE ©</p>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
